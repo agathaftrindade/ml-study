@@ -1,0 +1,8 @@
+version: "3"
+services:
+  jupyter-lab:
+      image: quay.io/jupyter/scipy-notebook:python-3.11.10
+      volumes:
+        - "./:/home/jovyan/work"
+      ports:
+        - 8888:8888
